@@ -1,0 +1,30 @@
+.features {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    &__icons {
+        display: flex;
+        width: 450px;
+        height: 120px;
+        background-color: var(--secondary-color);
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        width: 450px;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__text {
+        margin-top: 10px;
+        line-height: 24px;
+    }
+}

@@ -18,13 +18,28 @@
     &__item {
         width: 450px;
 
-        &:not(:first-child) {
-            margin-top: 30px;
-        }
+        // &:not(:first-child) {
+        //     margin-top: 30px;
+        // }
     }
 
     &__text {
         margin-top: 10px;
         line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features__icons, .features__item {
+        width: 354px;
+    }
+
+    .features__item:nth-child(2n) {
+        margin-left: 30px;
     }
 }

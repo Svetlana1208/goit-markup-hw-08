@@ -27,31 +27,33 @@
                         </svg>
                     </button>
 
-                <!-- <div class="menu">
-                    <ul class="nav">
-                        <li class="nav__items"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
-                        <li class="nav__items"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="nav__items"><a class="nav__link" href="">Контакты</a></li>
-                    </ul>
-        
-                    <ul class="contacts">
-                        <li class="contacts__items"> 
-                            <a class="contacts__link" href="mailto:info@devstudio.com">
-                                <svg class="contacts__hover" width="16px" height="12px">
-                                    <use href="./images/icons.svg#icon-envelope-hover"></use>
-                                </svg>
-                            info@devstudio.com</a>
-                        </li>
-                        
-                        <li class="contacts__items">
-                            <a class="contacts__link" href="tel:+380961111111">
-                                <svg class="contacts__hover" width="10px" height="16px">
-                                    <use href="./images/icons.svg#icon-Vector"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div> -->
+                    <div class="menu">
+                        <ul class="nav">
+                            <li class="nav__items"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
+                            <li class="nav__items"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="nav__items"><a class="nav__link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="menu">
+                        <ul class="contacts">
+                            <li class="contacts__items"> 
+                                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                                        <svg class="contacts__hover" width="16px" height="12px">
+                                            <use href="./images/icons.svg#icon-envelope-hover"></use>
+                                        </svg>
+                                    info@devstudio.com</a>
+                            </li>
+                                
+                            <li class="contacts__items">
+                                    <a class="contacts__link" href="tel:+380961111111">
+                                        <svg class="contacts__hover" width="10px" height="16px">
+                                            <use href="./images/icons.svg#icon-Vector"></use>
+                                        </svg>
+                                        +38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </section>
     </header>
@@ -59,7 +61,7 @@
      <main>
         <section class="hero">
             <div class="container hero-content">
-                <h1>Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open class="button" type="button">Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                      <div class="modal">
@@ -186,7 +188,11 @@
                 <h2>Наша команда</h2>
                 <ul class="coworkers__list">
                     <li class="coworkers__item">
-                        <img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" width="450" height="460" alt="Фото Игорь Демьяненко">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x">
+                            <source media="(max-width: 768px)" srcset="./images/img_768.jpg 1x, ./images/img_768@2x.jpg 2x">
+                            <img class="coworkers__pic" src="./images/img.jpg" alt="Фото Игорь Демьяненко">
+                        </picture>
                         <h3 class="coworkers__name">Игорь Демьяненко</h3>
                         <p class="coworkers__profession">Product Designer</p>
                         <ul class="coworkers__socialLinks">
@@ -221,7 +227,11 @@
                     </li>
 
                     <li class="coworkers__item">
-                        <img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg" width="450" height="460" alt="Фото Ольга Репина">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x">
+                            <source media="(max-width: 768px)" srcset="./images/img1_768.jpg 1x, ./images/img1_768@2x.jpg 2x">
+                            <img class="coworkers__pic" src="./images/img1.jpg" alt="Фото Ольга Репина">
+                        </picture>
                         <h3 class="coworkers__name">Ольга Репина</h3>
                         <p class="coworkers__profession">Frontend Developer</p>
                         <ul class="coworkers__socialLinks">
@@ -256,7 +266,11 @@
                     </li>
 
                     <li class="coworkers__item">
-                        <img srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg" width="450" height="460" alt="Фото Николай Тарасов">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x">
+                            <source media="(max-width: 768px)" srcset="./images/img2_768.jpg 1x, ./images/img2_768@2x.jpg 2x">
+                            <img class="coworkers__pic" src="./images/img2.jpg" alt="Фото Николай Тарасов">
+                        </picture>
                         <h3 class="coworkers__name">Николай Тарасов</h3>
                         <p class="coworkers__profession">Marketing</p>
                         <ul class="coworkers__socialLinks">
@@ -295,7 +309,11 @@
                     </li>
 
                     <li class="coworkers__item">
-                        <img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg" width="450" height="460" alt="Фото Михаил Ермаков">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x">
+                            <source media="(max-width: 768px)" srcset="./images/img3_768.jpg 1x, ./images/img3_768@2x.jpg 2x">
+                            <img class="coworkers__pic" src="./images/img3.jpg" alt="Фото Михаил Ермаков">
+                        </picture>
                         <h3 class="coworkers__name">Михаил Ермаков</h3>
                         <p class="coworkers__profession">UI Designer</p>
                         <ul class="coworkers__socialLinks">
@@ -394,53 +412,55 @@
 
  <footer>
         <div class="container footer">
-            <div>
-                <a class="logo logo--white" href="./index.html"><span class="logo__name">Web</span>Studio</a>
+            <div class="footer__tablet">
+                <div>
+                    <a class="logo logo--white" href="./index.html"><span class="logo__name">Web</span>Studio</a>
 
-                <address>
-                    <ul>
-                        <li><p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p></li>
-                        <li><a class="footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a class="footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <address>
+                        <ul>
+                            <li><p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p></li>
+                            <li><a class="footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
+                            <li><a class="footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="footer__social">
+                    <p class="footer__sectionName">присоединяйтесь</p>
+                    <ul class="footer__socialList">
+                        <li>
+                            <a class="footer__socialLink" href="">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer__socialLink" href="">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer__socialLink" href="">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer__socialLink" href="">
+                                <svg width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-
-            <div class="footer__social">
-                <p class="footer__sectionName">присоединяйтесь</p>
-                <ul class="footer__socialList">
-                    <li>
-                        <a class="footer__socialLink" href="">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="footer__socialLink" href="">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="footer__socialLink" href="">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="footer__socialLink" href="">
-                            <svg width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
 
             <div class="footer__subscribe">

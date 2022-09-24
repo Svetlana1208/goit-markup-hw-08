@@ -1,19 +1,10 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
     margin-bottom: 40px;
 
     &__button:not(:first-child) {
         margin-left: 8px;
-    }
-
-    &__button:nth-last-child(2) {
-        margin-left: 0;
-    }
-
-    &__button:nth-last-child(-n + 2) {
-        margin-top: 15px;
     }
 
     &__buttonItem {
@@ -133,4 +124,36 @@
         border-left: 1px solid #EEEEEE;
         border-right: 1px solid #EEEEEE;
     }
+
+    &__pic {
+        width: 450px;
+        height: 294px;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter__button:nth-last-child(2) {
+        margin-left: 0;
+    }
+
+    .filter__button:nth-last-child(-n + 2) {
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .filter {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .filter__button {
+        margin-left: 8px;
+    }
+
+    // .portfolio__pic {
+    //     width: 354px
+    // }
 }

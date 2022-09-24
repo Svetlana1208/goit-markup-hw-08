@@ -105,7 +105,7 @@ img {
 }
 
 header {
-  border-bottom: 1px solid var(--primary-white-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header {
@@ -119,11 +119,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    height: 80px;
-  }
 }
 
 .logo {
@@ -155,11 +150,6 @@ header {
   border-radius: 50%;
   outline: none;
 }
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 
 .menu {
   display: -webkit-box;
@@ -171,11 +161,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
 }
 
 .nav {
@@ -369,6 +354,19 @@ header {
   margin-left: 10px;
 }
 
+@media (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,12 +377,6 @@ header {
 }
 .filter__button:not(:first-child) {
   margin-left: 8px;
-}
-.filter__button:nth-last-child(2) {
-  margin-left: 0;
-}
-.filter__button:nth-last-child(-n+2) {
-  margin-top: 15px;
 }
 .filter__buttonItem {
   padding: 6px 22px;
@@ -499,7 +491,32 @@ header {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
 }
+.portfolio__pic {
+  width: 450px;
+  height: 294px;
+}
 
+@media (max-width: 767px) {
+  .filter__button:nth-last-child(2) {
+    margin-left: 0;
+  }
+  .filter__button:nth-last-child(-n+2) {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .filter {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filter__button {
+    margin-left: 8px;
+  }
+}
 .logo--white {
   color: var(--primary-white-color);
 }

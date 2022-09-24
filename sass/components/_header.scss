@@ -1,5 +1,5 @@
 header {
-    border-bottom: 1px solid var(--primary-white-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header {
@@ -7,10 +7,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-        @media screen and (min-width: 768px) {
-            height: 80px;
-        }
 }
 
 .logo {
@@ -39,10 +35,6 @@ header {
     border: none;
     border-radius: 50%;
     outline: none;
-
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
 }
 
 .menu {
@@ -51,10 +43,6 @@ header {
     margin: 0;
     list-style: none;
     align-items: center;
-
-        @media (max-width: 767px) {
-           display: none;
-        }   
 }
 
 .nav {
@@ -273,3 +261,19 @@ header {
 //             border: 1px solid rgba(33, 33, 33, 0.2);
 //             transform: rotate(90deg);
 //         }
+
+@media (min-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+        .menu-toggle {
+            display: none;
+        }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+}

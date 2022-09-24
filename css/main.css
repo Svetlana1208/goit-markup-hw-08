@@ -106,7 +106,7 @@ img {
 }
 
 header {
-  border-bottom: 1px solid var(--primary-white-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header {
@@ -120,11 +120,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    height: 80px;
-  }
 }
 
 .logo {
@@ -156,11 +151,6 @@ header {
   border-radius: 50%;
   outline: none;
 }
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 
 .menu {
   display: -webkit-box;
@@ -172,11 +162,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
 }
 
 .nav {
@@ -370,6 +355,19 @@ header {
   margin-left: 10px;
 }
 
+@media (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 /* Герой */
 .hero {
   max-width: 1600px;
@@ -382,13 +380,13 @@ header {
   text-align: center;
   background-color: var(--secondary-background-color);
 }
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header@2x.jpg);
   }
 }
-
 @media (min-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header768.jpg);
@@ -396,7 +394,7 @@ header {
   }
 }
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header768@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header768@2x.jpg);
   }

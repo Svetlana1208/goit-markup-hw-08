@@ -24,6 +24,33 @@
                     </svg>
                 </button>
     
+                <div class="menu">
+                    <ul class="nav">
+                        <li class="nav__items"><a class="nav__link" href="./index.html">Студия</a></li>
+                        <li class="nav__items"><a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav__items"><a class="nav__link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="menu">
+                    <ul class="contacts">
+                        <li class="contacts__items">
+                            <a class="contacts__link" href="mailto:info@devstudio.com">
+                                <svg class="contacts__hover" width="16px" height="12px">
+                                    <use href="./images/icons.svg#icon-envelope-hover"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+    
+                        <li class="contacts__items">
+                            <a class="contacts__link" href="tel:+380961111111">
+                                <svg class="contacts__hover" width="10px" height="16px">
+                                    <use href="./images/icons.svg#icon-Vector"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </section>
     </header>
@@ -45,7 +72,11 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__background">
-                                <img srcset="./images/p1.jpg 1x, ./images/p1@2x.jpg 2x" src="./images/p1.jpg" alt="Технокряк" width="450" height="294">
+                                <picture class="portfolio__pic">
+                                    <source media="(max-width: 480px)" srcset="./images/p1.jpg 1x, ./images/p1@2x.jpg 2x">
+                                    <source media="(max-width: 768px)" srcset="./images/p1_768.jpg 1x, ./images/p1_768@2x.jpg 2x">
+                                    <img src="./images/p1.jpg" alt="Технокряк">
+                                </picture>
                                 <div class="portfolio__overlay">
                                     <p class="portfolio__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                         Все это позволит посетителю получить
@@ -195,55 +226,57 @@
 
 <footer>
     <div class="container footer">
-        <div>
-            <a class="logo logo--white" href="./index.html"><span class="logo__name">Web</span>Studio</a>
+        <div class="footer__tablet">
+            <div>
+                <a class="logo logo--white" href="./index.html"><span class="logo__name">Web</span>Studio</a>
 
-            <address>
-                <ul>
+                <address>
+                    <ul>
+                        <li>
+                            <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
+                        <li><a class="footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer__social">
+                <p class="footer__sectionName">присоединяйтесь</p>
+                <ul class="footer__socialList">
                     <li>
-                        <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a class="footer__socialLink" href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li><a class="footer__contacts" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+
+                    <li>
+                        <a class="footer__socialLink" href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer__socialLink" href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="footer__socialLink" href="">
+                            <svg width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
-        </div>
-
-        <div class="footer__social">
-            <p class="footer__sectionName">присоединяйтесь</p>
-            <ul class="footer__socialList">
-                <li>
-                    <a class="footer__socialLink" href="">
-                        <svg width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="footer__socialLink" href="">
-                        <svg width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-twitter-1"></use>
-                        </svg>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="footer__socialLink" href="">
-                        <svg width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="footer__socialLink" href="">
-                        <svg width="20px" height="20px">
-                            <use href="./images/icons.svg#icon-linkedin-1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
 
         <div class="footer__subscribe">

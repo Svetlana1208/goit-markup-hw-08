@@ -93,3 +93,25 @@ img {
     border: 0;
     clip: rect(0 0 0 0);
 }
+
+@media (min-width: 768px) {
+    h3 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;  
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}

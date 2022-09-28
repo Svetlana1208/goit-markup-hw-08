@@ -12,8 +12,6 @@ address {
 }
 
 .footer {
-    text-align: center;
-
     &__adress {
         color: var(--primary-white-color);
 
@@ -52,7 +50,6 @@ address {
         margin-top: 60px;
 
         &List {
-            margin-bottom: 60px;
             display: flex;
             justify-content: space-between;
         }
@@ -103,7 +100,6 @@ address {
         &Button {
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
             display: flex;
             width: 200px;
             height: 50px;
@@ -130,18 +126,64 @@ address {
     }
 }
 
+@media (max-width: 767px) {
+    .footer__socialList {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer__tablet {
+        justify-content: space-around;
+    }
+
+    .footer__subscribe {
+        margin-top: 60px;
+    }
+}
+
 @media (min-width: 768px) {
     .footer__tablet {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
     }
 
     .footer__social {
         margin-top: 5px;
     }
 
-    .footer__subscribe {
-        margin-top: 60px;
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        text-align: center;
     }
+
+    .footer__subscribeButton {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        display: flex;
+    }
+
+    .footer__subscribeForm {
+        display: flex;
+    }
+
+    .footer__social {
+        margin-top: 12px;
+        margin-left: 70px;
+    }
+
+    .footer__subscribe {
+        margin-top: 12px;
+        margin-left: 93px;
+    }
+
+    .footer__subscribeButton {
+        margin-left: 12px;
+    }
+
 }

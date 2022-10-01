@@ -47,7 +47,6 @@ address {
     &__social {
         display: inline-block;
         width: 206px;
-        margin-top: 60px;
 
         &List {
             display: flex;
@@ -127,6 +126,10 @@ address {
 }
 
 @media (max-width: 767px) {
+    .footer__social {
+        margin-top: 60px;
+    }
+
     .footer__socialList {
         margin-bottom: 60px;
     }
@@ -145,12 +148,8 @@ address {
 @media (min-width: 768px) {
     .footer__tablet {
         display: flex;
+        align-items: baseline;
     }
-
-    .footer__social {
-        margin-top: 5px;
-    }
-
 }
 
 @media (max-width: 1199px) {

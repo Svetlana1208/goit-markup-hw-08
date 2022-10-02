@@ -25,11 +25,11 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
+    margin: 0 auto;
     width: 480px;
   }
 }
@@ -344,6 +344,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-socialLink {
@@ -677,7 +679,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -718,6 +719,11 @@ address {
   margin-left: 11px;
 }
 
+@media (min-width: 480px) {
+  .footer__subscribeEmail {
+    width: 358px;
+  }
+}
 @media (max-width: 767px) {
   .footer__social {
     margin-top: 60px;

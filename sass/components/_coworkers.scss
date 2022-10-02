@@ -6,15 +6,13 @@
     }
 
     &__item {
-        width: 450px;
         background-color: var(--primary-white-color);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     &__pic {
-            width: 450px;
-            height: 460px;
+        height: 460px;
     }
 
     &__name {
@@ -62,6 +60,16 @@
 
             fill: var(--primary-white-color);
         }
+    }
+}
+
+@media (min-width: 480px) {
+    .coworkers__item {
+        width: 450px;
+    }
+
+    .coworkers__pic {
+        width: 450px;
     }
 }
 

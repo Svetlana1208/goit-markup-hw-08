@@ -5,7 +5,6 @@
 
     &__icons {
         display: flex;
-        width: 450px;
         height: 120px;
         background-color: var(--secondary-color);
         justify-content: center;
@@ -15,17 +14,19 @@
         margin-bottom: 30px;
     }
 
-    &__item {
-        width: 450px;
-
-        // &:not(:first-child) {
-        //     margin-top: 30px;
-        // }
-    }
-
     &__text {
         margin-top: 10px;
         line-height: 24px;
+    }
+}
+
+@media (min-width: 480px) {
+    .features__item {
+        width: 450px;
+    }
+
+    .features__icons {
+        width: 450px;
     }
 }
 

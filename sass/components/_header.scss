@@ -149,6 +149,9 @@ header {
 }
 
 .mobile-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -159,6 +162,11 @@ header {
     padding: 10px;
     color: var(--primary-white-color);
     text-decoration: none;
+}
+
+.mobile-list-nav {
+    margin-left: 0;
+    margin-bottom: auto;
 }
 
 .mobile-link {
@@ -184,6 +192,10 @@ header {
     color: var(--accent-color);
 }
 
+.mobile-list-contacts, .mobile-social {
+    margin-left: 0;
+}
+
 .mobile-tel {
     display: block;
 
@@ -206,12 +218,12 @@ header {
 
 .mobile-contactTel {
     display: block;
-    margin-top: 302px;
+    margin-bottom: 33px;
 }
 
 .mobile-contactEmail {
     display: block;
-    margin-top: 33px;
+    margin-bottom: 64px;
 }
 
 .mobile-social {
@@ -221,7 +233,6 @@ header {
 
 .mobile-socialLink {
     display: flex;
-    margin-top: 64px;
     
     font-weight: 500;
     font-size: 18px;

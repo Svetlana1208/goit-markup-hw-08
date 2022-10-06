@@ -281,6 +281,14 @@ header {
 }
 
 .mobile-menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -291,6 +299,11 @@ header {
   padding: 10px;
   color: var(--primary-white-color);
   text-decoration: none;
+}
+
+.mobile-list-nav {
+  margin-left: 0;
+  margin-bottom: auto;
 }
 
 .mobile-link {
@@ -314,6 +327,10 @@ header {
   color: var(--accent-color);
 }
 
+.mobile-list-contacts, .mobile-social {
+  margin-left: 0;
+}
+
 .mobile-tel {
   display: block;
   font-weight: 500;
@@ -333,12 +350,12 @@ header {
 
 .mobile-contactTel {
   display: block;
-  margin-top: 302px;
+  margin-bottom: 33px;
 }
 
 .mobile-contactEmail {
   display: block;
-  margin-top: 33px;
+  margin-bottom: 64px;
 }
 
 .mobile-social {
@@ -353,7 +370,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 64px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
